@@ -67,3 +67,44 @@
   - [x] 보너스 번호가 숫자가 아닌 경우
   - [x] 보너스 번호와 당첨 번호가 중복인 경우
   - [x] 보너스 번호가 범위를 벗어난 경우
+
+<br>
+
+## 📂 파일 구조
+```sh
+javascript-lotto-8/
+├── tests/
+│   ├── ApplicationTest.js            : 테스트 코드 관리
+│   └── LottoTest.js
+├── node_modules/
+│   └── ...
+├── src/
+│   ├── constant/
+│   │   ├── error.js                  : 에러 메세지 상수
+│   │   ├── input.js                  : 입력 메세지 상수
+│   │   └── output.js                 : 출력 메세지 상수
+│   ├── input/ 
+│   │   ├── numberInput.js            : 당첨 번호, 보너스 번호 입력 함수
+│   │   └── priceInput.js             : 구매 금액 입력 함수
+│   ├── lotto/
+│   │   ├── calculateRateOfReturn.js  : 수익률 계산 함수
+│   │   ├── checkLotto.js             : 당첨 결과 계산 함수
+│   │   └── getLotto.js               : 로또 발행 함수
+│   ├── output/ 
+│   │   ├── lottoPrint.js             : 로또 출력 함수
+│   │   └── resultPrint.js            : 통계 출력 함수
+│   ├── test/ 
+│   │   └── testCase.js               : 예외 테스트용 입력 케이스 상수
+│   ├── validate/
+│   │   ├── validateBonus.js          : 보너스 번호 입력값 검증 함수
+│   │   ├── validatePrice.js          : 구매 금액 입력값 검증 함수
+│   │   └── validateWinning.js        : 당첨 번호 입력값 검증 함수
+|   ├── App.js
+│   ├── index.js
+│   └── Lotto.js                      : 로또 클래스
+├── .gitignore
+├── .npmrc 
+├── package.json
+├── package.json
+└── README.md 
+```
