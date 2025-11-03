@@ -1,5 +1,5 @@
 import { priceInput } from "./input/priceInput.js";
-import { winningInput } from "./input/winningNumberInput.js";
+import { bonusInput, winningInput } from "./input/winningNumberInput.js";
 import { lottoOutput } from "./output/lottoOutput.js";
 
 class App {
@@ -8,6 +8,7 @@ class App {
     lottoOutput(lottoCount);
 
     const winningNumber = await winningInput();
+    const bonusNumber = await bonusInput(winningNumber);
   }
 }
 
