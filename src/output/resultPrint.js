@@ -7,7 +7,7 @@ export function resultPrint(price, lottoArray, winningNumber, bonusNumber) {
   const result = checkLotto(lottoArray, winningNumber, bonusNumber);
 
   Console.print("");
-  Console.print("OUTPUT_MESSAGE.STATISTICS");
+  Console.print(OUTPUT_MESSAGE.STATISTICS);
   statisticsPrint(result);
 
   Console.print("");
