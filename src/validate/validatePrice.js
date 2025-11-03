@@ -5,6 +5,10 @@ export function validatePrice(price) {
     throw new Error(ERROR_MESSAGE.PRICE_NOT_NUMBER);
   }
 
+  if (price < 0) {
+    throw new Error(ERROR_MESSAGE.PRICE_NOT_POSITIVE);
+  }
+
   if (price % 1000 !== 0) {
     throw new Error(ERROR_MESSAGE.PRICE_NOT_1000);
   }

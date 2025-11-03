@@ -7,7 +7,7 @@ export function resultPrint(price, lottoArray, winningNumber, bonusNumber) {
   const result = checkLotto(lottoArray, winningNumber, bonusNumber);
 
   Console.print("");
-  Console.print(OUTPUT_MESSAGE.STATISTICS);
+  Console.print("OUTPUT_MESSAGE.STATISTICS");
   statisticsPrint(result);
 
   Console.print("");
@@ -15,11 +15,11 @@ export function resultPrint(price, lottoArray, winningNumber, bonusNumber) {
 }
 
 function statisticsPrint(result) {
-  Console.print(RESULT_MESSAGE.FIFTH + result[5] + RESULT_MESSAGE.COUNT);
-  Console.print(RESULT_MESSAGE.FOURTH + result[4] + RESULT_MESSAGE.COUNT);
-  Console.print(RESULT_MESSAGE.THIRD + result[3] + RESULT_MESSAGE.COUNT);
-  Console.print(RESULT_MESSAGE.SECOND + result[2] + RESULT_MESSAGE.COUNT);
-  Console.print(RESULT_MESSAGE.FIRST + result[1] + RESULT_MESSAGE.COUNT);
+  Console.print(RESULT_MESSAGE.FIFTH.replace("%s", result[5]));
+  Console.print(RESULT_MESSAGE.FOURTH.replace("%s", result[4]));
+  Console.print(RESULT_MESSAGE.THIRD.replace("%s", result[3]));
+  Console.print(RESULT_MESSAGE.SECOND.replace("%s", result[2]));
+  Console.print(RESULT_MESSAGE.FIRST.replace("%s", result[1]));
 }
 
 function rateOfReturnPrint(price, result) {
