@@ -1,5 +1,7 @@
 export const OUTPUT_MESSAGE = {
   LOTTO_COUNT: "개를 구매했습니다.",
+  STATISTICS: "당첨 통계\n---",
+  RATE_OF_RETURN: "총 수익률은 %s%입니다.",
 };
 
 export const RESULT_MESSAGE = {

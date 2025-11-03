@@ -1,7 +1,7 @@
 import { priceInput } from "./input/priceInput.js";
 import { bonusInput, winningInput } from "./input/numberInput.js";
 import { lottoPrint } from "./output/lottoPrint.js";
-import { resultOutput } from "./output/resultOutput.js";
+import { resultPrint } from "./output/resultPrint.js";
 
 class App {
   async run() {
@@ -12,7 +12,7 @@ class App {
     const winningNumber = await winningInput(); //3. 당첨 번호, 보너스 입력
     const bonusNumber = await bonusInput(winningNumber);
 
-    resultOutput(lottoArray, winningNumber, bonusNumber);
+    resultPrint(price, lottoArray, winningNumber, bonusNumber); //4. 통계
   }
 }
 
