@@ -5,7 +5,7 @@ export async function winningInput() {
   Console.print("");
 
   const winningInput = await Console.readLineAsync(INPUT_MESSAGE.WINNING);
-  const winningNumber = winningInput.split(",");
+  const winningNumber = winningInput.split(",").map((x) => parseInt(x));
 
   return winningNumber;
 }
@@ -18,5 +18,5 @@ export async function bonusInput(winningNumber) {
     throw new Error("[ERROR] 당첨 번호와 중복입니다.");
   }
 
-  return bonusInput;
+  return parseInt(bonusInput);
 }

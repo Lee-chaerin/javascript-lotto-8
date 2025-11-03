@@ -10,4 +10,6 @@ export function lottoOutput(lottoCount) {
   for (const lotto of lottoArray) {
     Console.print(lotto.getNumbers());
   }
+
+  return lottoArray;
 }
