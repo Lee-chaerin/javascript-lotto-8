@@ -1,10 +1,10 @@
-import { Console } from "@woowacourse/mission-utils";
 import { priceInput } from "./input/priceInput.js";
+import { lottoOutput } from "./output/lottoOutput.js";
 
 class App {
   async run() {
     const lottoCount = await priceInput();
-    Console.print(lottoCount);
+    lottoOutput(lottoCount);
   }
 }
 
