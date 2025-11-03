@@ -7,5 +7,7 @@ export function lottoOutput(lottoCount) {
   Console.print(lottoCount + OUTPUT_MESSAGE.LOTTO_COUNT);
 
   const lottoArray = getLotto(lottoCount);
-  Console.print(lottoArray);
+  for (const lotto of lottoArray) {
+    Console.print(lotto.getNumbers());
+  }
 }

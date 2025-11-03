@@ -26,6 +26,7 @@ class Lotto {
 
   #makeNumbers() {
     const lottoNumbers = Random.pickUniqueNumbersInRange(1, 45, 6);
+    lottoNumbers.sort((a, b) => a - b);
 
     return lottoNumbers;
   }
