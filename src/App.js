@@ -5,7 +5,8 @@ import { resultOutput } from "./output/resultOutput.js";
 
 class App {
   async run() {
-    const lottoCount = await priceInput();
+    const [price, lottoCount] = await priceInput(); //1. 구입
+
     const lottoArray = lottoOutput(lottoCount);
 
     const winningNumber = await winningInput();
